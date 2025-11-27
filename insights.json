@@ -15,4 +15,68 @@
       "Türk": 39,
       "Fast food": 25
     },
-    "restaurants_with_cuisine": 
+    "restaurants_with_cuisine": 263,
+    "percentage": 53.6,
+    "multi_cuisine_count": 137
+  },
+  "pricing": {
+    "average_cost": 27.58,
+    "median_cost": 23.75,
+    "min_cost": 9.0,
+    "max_cost": 100.0,
+    "restaurants_with_pricing": 176,
+    "categories": {
+      "budget": 21,
+      "mid_range": 128,
+      "premium": 27
+    }
+  },
+  "features": {
+    "total_unique_features": 27,
+    "top_10": {
+      "Masaların sifarişi": 162,
+      "Fon musiqisi": 155,
+      "İçkilər": 151,
+      "Kredit kartla ödəniş": 136,
+      "Wi-Fi": 136,
+      "Canlı musiqi": 74,
+      "Park xidməti": 68,
+      "Biznes lanç": 66,
+      "Take Away": 62,
+      "Sərbəst Wi-Fi": 59
+    },
+    "restaurants_with_features": 249,
+    "max_features": 14,
+    "avg_features": 5.3
+  },
+  "geographic": {
+    "restaurants_with_gps": 264,
+    "percentage": 53.8,
+    "coverage": {
+      "lat_min": 40.2929,
+      "lat_max": 50.3218,
+      "lon_min": 49.7343,
+      "lon_max": 122.807
+    }
+  },
+  "social_media": {
+    "facebook": {
+      "count": 303,
+      "percentage": 61.7
+    },
+    "instagram": {
+      "count": 24,
+      "percentage": 4.9
+    },
+    "foursquare": {
+      "count": 86,
+      "percentage": 17.5
+    },
+    "multi_platform": 24
+  },
+  "hours": {
+    "restaurants_with_hours": 338,
+    "percentage": 68.8,
+    "24_7_count": 41
+  }
+}

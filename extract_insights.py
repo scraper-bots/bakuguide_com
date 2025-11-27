@@ -84,7 +84,7 @@ for feature_str in df['features'].dropna():
 feature_counts = Counter(features)
 insights['features']['total_unique_features'] = len(feature_counts)
 insights['features']['top_10'] = {k: int(v) for k, v in feature_counts.most_common(10)}
-insights['features']['restaurants_with_features'] = (df['features'].notna() & (df['features'] != '')).sum()
+insights['features']['restaurants_with_features'] = int((df['features'].notna() & (df['features'] != '')).sum())
 
 # Most featured restaurants
 most_featured = df[df['features'].notna()].copy()
@@ -117,15 +117,15 @@ if len(geo_data) > 0:
 # ============================================================================
 insights['social_media'] = {
     'facebook': {
-        'count': (df['facebook'].notna() & (df['facebook'] != '')).sum(),
+        'count': int((df['facebook'].notna() & (df['facebook'] != '')).sum()),
         'percentage': round(((df['facebook'].notna() & (df['facebook'] != '')).sum() / len(df)) * 100, 1)
     },
     'instagram': {
-        'count': (df['instagram'].notna() & (df['instagram'] != '')).sum(),
+        'count': int((df['instagram'].notna() & (df['instagram'] != '')).sum()),
         'percentage': round(((df['instagram'].notna() & (df['instagram'] != '')).sum() / len(df)) * 100, 1)
     },
     'foursquare': {
-        'count': (df['foursquare'].notna() & (df['foursquare'] != '')).sum(),
+        'count': int((df['foursquare'].notna() & (df['foursquare'] != '')).sum()),
         'percentage': round(((df['foursquare'].notna() & (df['foursquare'] != '')).sum() / len(df)) * 100, 1)
     }
 }
@@ -141,7 +141,7 @@ insights['social_media']['multi_platform'] = len(multi_social)
 # ============================================================================
 # WORKING HOURS INSIGHTS
 # ============================================================================
-insights['hours']['restaurants_with_hours'] = (df['working_hours'].notna() & (df['working_hours'] != '')).sum()
+insights['hours']['restaurants_with_hours'] = int((df['working_hours'].notna() & (df['working_hours'] != '')).sum())
 insights['hours']['percentage'] = round((insights['hours']['restaurants_with_hours'] / len(df)) * 100, 1)
 
 # 24/7 restaurants
