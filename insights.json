@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "total_restaurants": 491,
+    "data_completeness": {
+      "essential": 99.3,
+      "business_details": 57.7
+    }
+  },
+  "cuisine": {
+    "total_unique_cuisines": 36,
+    "top_5": {
+      "Avropa": 103,
+      "Azərbaycan": 86,
+      "İtaliya": 46,
+      "Türk": 39,
+      "Fast food": 25
+    },
+    "restaurants_with_cuisine": 
